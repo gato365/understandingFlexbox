@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flex for All</title>
+    <style>
+    html{
+        height:100%;
+    }
+    body{
+        height:100%;
+        /* margin:0; */
+    }
+        .flex-container-outer-big {
+            display: flex;
+            flex-flow: column;
+        }
+
+        #flex-container-outer {
+            margin: auto;
+            border: 5px solid black;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.26);
+            width: 400px;
+            /* height: 800px; */
+            height: 100%;
+
+        }
+
+        .flex-container-small {
+            display: flex;
+            flex-flow: wrap;
+            row-gap: 10px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .big-box {
+            margin: auto;
+            border: 5px solid rgb(255, 0, 0);
+            padding: 10px;
+            background-color: rgba(255, 0, 0, 0.32);
+            width: 300px;
+            height: 300px;
+        }
+
+
+
+        .small-box {
+            margin: auto;
+            border: 5px solid blue;
+            background-color: rgba(0, 0, 255, 0.205);
+            width: 135px;
+            height: 125px;
+        }
+
+
+
+        @media screen and (max-width: 980px) {
+
+    
+            .small-box {
+                margin: auto;
+                border: 5px solid rgb(255, 0, 0);
+                padding: 10px;
+                padding-top: 20px;
+                background-color: rgba(255, 0, 0, 0.32);
+                width: 160px;
+                height: 200px;
+            }
+
+            .flex-container-small {
+                display: flex;
+                flex-flow: wrap;
+                row-gap: 10px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            #flex-container-outer {
+                margin: auto;
+                border: 5px solid black;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.26);
+                width: 400px;
+                /* height: 500px; */
+                height: 100%;
+
+
+            }
+            .flex-container-outer-big {
+                display: flex;
+                flex-flow: column;
+            }
+
+            .small-box {
+                margin: auto;
+                border: 5px solid blue;
+                background-color: rgba(0, 0, 255, 0.205);
+                width: 90px;
+                height: 60px;
+            }
+
+            #big-box-specs {
+                margin: auto;
+                width: 160px;
+                height: 400px;
+                margin-top: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='flex-container-outer-big' id='flex-container-outer'>
+
+
+        <ul class='big-box'>
+
+        </ul>
+
+
+        <ul class='big-box flex-container-small' id='big-box-specs'>
+            <li class='small-box'></li>
+            <li class='small-box'></li>
+            <li class='small-box'></li>
+            <li class='small-box'></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
